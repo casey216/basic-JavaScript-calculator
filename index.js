@@ -1,3 +1,4 @@
+alert("Hello")
 #main function
 def main():
     print("welcome to Simple CLI calculator")
