@@ -1,6 +1,6 @@
 // main function
 function main() {
-    alert("welcome to Simple CLI calculator");
+    alert("welcome to Simple JavaScript calculator");
 
     //collects user input
     let number1 = validate_number(prompt("Enter the first number: "));
