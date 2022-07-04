@@ -49,7 +49,7 @@ function validate_operand() {
 		return false;
 	}
     else {
-        alert("your input " + operand + " is not a valid operand!!!");
+        alert("your input '" + operand + "' is not a valid operand!!!");
         return validate_operand();
 	}
 }
