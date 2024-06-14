@@ -4,17 +4,18 @@ function main() {
 
     //collects user input
     let number1 = validate_number(prompt("Enter the first number: "));
-    if (number1 != false) {
-		let number2 = validate_number(prompt("Enter the second number: "));
-		if (number2 != false) {
-			let operand = validate_operand();
-
-			//calculates and prints answer
-			if (operand != false) {
-				let ans = calculate(number1, number2, operand);
-				alert(number1 + " " + operand + " " + number2 + " = " + ans);
-			}
-		}
+    if (number1 == false) {
+		return;
+	}
+    let number2 = validate_number(prompt("Enter the second number: "));
+	if (number2 == false) {
+        return;
+	}
+    let operand = validate_operand();
+    //calculates and prints answer
+	if (operand != false) {
+		let ans = calculate(number1, number2, operand);
+		alert(number1 + " " + operand + " " + number2 + " = " + ans);
 	}
 }
 
